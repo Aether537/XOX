@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XOX Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>XOX Oyunu</h1>
+        <!-- Skor Tablosu -->
+        <div class="scoreboard">
+            <div class="score" id="xScore">X: 0</div>
+            <div class="score" id="oScore">O: 0</div>
+            <div class="score draw" id="drawScore">Berabere: 0</div>
+        </div>
+        <div class="board" id="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <button id="restartButton" class="button">Yeniden Başla</button>
+    </div>
+    <!-- Kazanan oyuncuyu göstermek için modal pencere -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <p id="winnerMessage"></p>
+            <button id="newGameButton" class="button">Yeni Oyun</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
